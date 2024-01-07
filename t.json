@@ -1,0 +1,263 @@
+{
+  "current": "zhu1",
+  "current_b": "zhu1",
+  "config": {
+    "is_state": false
+  },
+  "_data": [
+    {
+      "title": "默认任务1",
+      "desc": "你好，这是任务插件的第一个任务，我们需要你给予一个物品，试试看？",
+      "tag": "zhu1",
+      "state": false,
+      "item": [
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 10
+        }
+      ],
+      "complete_item": [
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 100
+        }
+      ]
+    },
+    {
+      "title": "默认任务2",
+      "desc": "太棒了，那么看看这个物品提交会怎么样",
+      "tag": "zhu2",
+      "state": false,
+      "item": [
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 10
+        },
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 20
+        },
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 30
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务3",
+      "desc": "那检测一下装备是否可以正常完成任务呢！！！",
+      "tag": "zhu3",
+      "state": false,
+      "item": [
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 10
+        },
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 20
+        },
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 30
+        },
+        {
+          "type": "equip",
+          "id": "0bebc5fffdd070ea",
+          "num": 1
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务4",
+      "desc": "对话任务检测",
+      "tag": "zhu4",
+      "state": false,
+      "item": [
+        {
+          "type": "actor",
+          "id": "cf6500f87ceb350d",
+          "talk": false
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务5",
+      "desc": "变量检测",
+      "tag": "zhu5",
+      "state": false,
+      "item": [
+        {
+          "type": "var",
+          "id": "565226a7a945bfd3",
+          "op": "==",
+          "val": "true",
+          "name": "我是显示的名字"
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务6",
+      "desc": "技能检测，拥有指定技能才可以完成任务哦！",
+      "tag": "zhu6",
+      "state": false,
+      "item": [
+        {
+          "type": "skill",
+          "id": "d72fc9543a60cfd8"
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务7",
+      "desc": "状态检测，拥有指定状态才可以完成任务，快去和NPC对话哦！",
+      "tag": "zhu7",
+      "state": false,
+      "item": [
+        {
+          "type": "state",
+          "id": "2c45a007f5e43c64"
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务8",
+      "desc": "事件执行，点击完成任务会执行相应的事件",
+      "tag": "zhu8",
+      "state": false,
+      "item": [],
+      "complete_item": [
+        {
+          "type": "event",
+          "id": "2b0a963a9588c6a0",
+          "num": 5
+        }
+      ]
+    },
+    {
+      "title": "默认任务9",
+      "desc": "触发器和元素的检测，去NPC那里看看",
+      "tag": "zhu9",
+      "state": false,
+      "item": [
+        {
+          "type": "elem",
+          "id": "102ac59a0959fb68",
+          "name": "元素测试（别名）"
+        },
+        {
+          "type": "trigger",
+          "id": "8ae9a32789d33a14",
+          "name": "触发器测试（别名）"
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务10",
+      "desc": "我是自定义属性的使用，你可以去NPC那里完成我这个任务",
+      "tag": "zhu10",
+      "state": false,
+      "item": [
+        {
+          "type": "custom_type",
+          "id": "xuran",
+          "key1 ": "123",
+          "2key ": "测试",
+          "测试中文key ": "222"
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务11",
+      "desc": "这里需要你完成支线的一个任务，请你前往去完成",
+      "tag": "zhu11",
+      "state": false,
+      "item": [
+        {
+          "type": "branch",
+          "id": "zhu1"
+        }
+      ],
+      "complete_item": []
+    },
+    {
+      "title": "默认任务12",
+      "desc": "我这个任务没什么，不用完成",
+      "tag": "zhu12",
+      "state": false,
+      "item": [
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 10
+        },
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 20
+        },
+        {
+          "type": "item",
+          "id": "9bb9eeccaf5c50a5",
+          "num": 30
+        },
+        {
+          "type": "equip",
+          "id": "0bebc5fffdd070ea",
+          "num": 1
+        },
+        {
+          "type": "equip",
+          "id": "0bebc5fffdd070ea",
+          "num": 1
+        }
+      ],
+      "complete_item": []
+    }
+  ],
+  "_branch_data": [
+    {
+      "title": "支线任务1",
+      "desc": "我是支线的任务，你需要完成我",
+      "tag": "zhu1",
+      "state": false,
+      "item": [
+        {
+          "type": "actor",
+          "id": "d9e6714b1c40115d",
+          "talk": false
+        }
+      ],
+      "complete_item": []
+    }
+  ],
+  "_connect": {
+    "zhu1": "zhu2",
+    "zhu2": "zhu3",
+    "zhu3": "zhu4",
+    "zhu4": "zhu5",
+    "zhu5": "zhu6",
+    "zhu6": "zhu7",
+    "zhu7": "zhu8",
+    "zhu8": "zhu9",
+    "zhu9": "zhu10"
+  },
+  "_connect_branch": {},
+  "extend_struct": {}
+}

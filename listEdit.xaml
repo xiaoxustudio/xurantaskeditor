@@ -1,0 +1,19 @@
+﻿<Window x:Name="window" x:Class="徐然编辑先生.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:徐然编辑先生"
+        mc:Ignorable="d"
+         Height="320" Width="450">
+    <DockPanel x:Name="dockPanel" LastChildFill="False">
+        <Grid Width="{Binding ActualWidth, ElementName=dockPanel, Mode=OneWay}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="9*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <RichTextBox Name="rtb"  Grid.Column="0"></RichTextBox>
+            <Button Content="应用" Grid.Column="1"  Click="Button_Click" VerticalAlignment="Bottom"/>
+        </Grid>
+    </DockPanel>
+</Window>

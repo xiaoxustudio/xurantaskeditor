@@ -1,0 +1,58 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:徐然编辑先生"
+        xmlns:Primitives="clr-namespace:System.Windows.Controls.Ribbon.Primitives;assembly=System.Windows.Controls.Ribbon" x:Class="徐然编辑先生.MainWindow"
+        mc:Ignorable="d"
+        Title="徐然编辑先生" Height="520" Width="800" ResizeMode="NoResize">
+    <Window.Resources>
+        <Primitives:RibbonWindowSmallIconConverter x:Key="RibbonWindowSmallIconConverter"/>
+    </Window.Resources>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="文件" >
+                <MenuItem Header="新建任务数据" Click="createEmptyData" />
+                <MenuItem Header="打开任务数据" Click="opentask" />
+                <MenuItem Header="保存任务数据" Click="savetask" />
+                <Separator />
+                <MenuItem Header="退出编辑器" />
+            </MenuItem>
+            <MenuItem Header="其他" >
+                <MenuItem Header="关于" Click="about" />
+            </MenuItem>
+        </Menu>
+        <ListBox MouseRightButtonDown="listbox1_MouseRightButtonDown" MouseDoubleClick="listbox1_DC" Width="130" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Left" x:Name="listbox1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Text}" FontWeight="{Binding FW}" Foreground="{Binding TextColor}"  />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ContentControl  x:Name="XRcontainer">
+            <Grid Width="694">
+                <Label x:Name="title"  Content="Label" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="tag"  Content="Label" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="state"  Content="Label" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top"/>
+                <Label Content="检测列表" HorizontalAlignment="Left" Margin="215,28,0,0" VerticalAlignment="Top"/>
+                <Label Content="完成列表" HorizontalAlignment="Left" Margin="430,28,0,0" VerticalAlignment="Top" />
+                <ListView MouseDoubleClick="checkList_MouseDoubleClick" x:Name="checkList" Margin="225,58,309,0" Width="160" VerticalAlignment="Top" Height="350">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <ListView MouseDoubleClick="comList_MouseDoubleClick"  x:Name="comList"  Margin="430,58,104,0" Height="350" VerticalAlignment="Top" Width="160">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Label x:Name="connect"  Content="Label" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </ContentControl>
+    </DockPanel>
+</Window>
